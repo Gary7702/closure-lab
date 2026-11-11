@@ -6,9 +6,9 @@
 
 [中文入门](README.zh-CN.md) · [Language reference](docs/language.md) · [Architecture](docs/architecture.md) · [Development story](docs/evolution.md)
 
-This project turns earlier self-study interpreter exercises into an installable, tested engineering portfolio. It implements its own lexer, parser and evaluator: **no Python `eval()` or `exec()`**. It is deliberately small enough to read, reason about and discuss in an interview.
+This project turns earlier self-study interpreter exercises into an installable, tested engineering portfolio. It implements its own lexer, parser and evaluator: **no Python `eval()` or `exec()`**. It is deliberately small enough to read, reason about and discuss in an interview. 
 
-> This is an AI-assisted extension and rewrite, not a claim that every present feature existed in the original exercises. See [the development story](docs/evolution.md) and `NOTICE` for the boundary between historical work and this iteration.
+> This is an AI-assisted extension and rewrite, not a claim that every present feature existed in the original exercises. See [the development story](docs/evolution.md) and `NOTICE` for the boundary between historical work and this iteration. Originally written 2024–2025; cleaned up and documented with AI assistance, Nov 2026
 
 ## Highlights
 
