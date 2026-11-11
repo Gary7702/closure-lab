@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">
+<title id="title">Closure Lab — from expressions to environments</title>
+<desc id="desc">A Python language implementation with lexer, parser and an explicit-stack evaluator. Lexical scope, closures and recursion.</desc>
+<rect width="1000" height="390" rx="20" fill="#f6f8fc"/>
+<g font-family="Arial, sans-serif">
+<text x="48" y="60" font-size="15" fill="#526177" letter-spacing="3">LANGUAGE IMPLEMENTATION / PYTHON</text>
+<text x="48" y="128" font-size="56" font-weight="700" fill="#18253b">Closure Lab</text>
+<text x="48" y="168" font-size="21" fill="#526177">Small language. Explicit semantics. Real engineering.</text>
+<g font-family="Consolas, monospace" font-size="18" fill="#243b65">
+<rect x="48" y="202" width="904" height="66" rx="10" fill="#e8edf8"/>
+<text x="70" y="230">(define make-adder (lambda (x) (lambda (y) (+ x y))))</text>
+<text x="70" y="253">((make-adder 7) 5)                         ; 12</text>
+</g>
+<g font-size="17" fill="#18253b">
+<rect x="48" y="305" width="220" height="44" rx="8" fill="#ffffff" stroke="#ccd5e4"/>
+<text x="67" y="333">01 / tokenize</text>
+<path d="M280 327h36" stroke="#879ab8" stroke-width="2"/>
+<rect x="330" y="305" width="220" height="44" rx="8" fill="#ffffff" stroke="#ccd5e4"/>
+<text x="349" y="333">02 / parse AST</text>
+<path d="M562 327h36" stroke="#879ab8" stroke-width="2"/>
+<rect x="612" y="305" width="340" height="44" rx="8" fill="#ffffff" stroke="#ccd5e4"/>
+<text x="631" y="333">03 / evaluate + continuations</text>
+</g>
+</g>
+</svg>

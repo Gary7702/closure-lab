@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "closure-lab"
+version = "0.1.0"
+description = "A stack-safe Python interpreter exploring lexical scope, closures and recursion"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Gary7702"}]
+keywords = ["interpreter", "closures", "lexical-scope", "education"]
+classifiers = ["Programming Language :: Python :: 3", "Topic :: Software Development :: Interpreters", "Development Status :: 3 - Alpha"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "coverage[toml]>=7.6,<8", "ruff>=0.11,<1", "mypy>=1.15,<2", "build>=1.2,<2"]
+
+[project.scripts]
+closurelab = "closurelab.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Gary7702/closure-lab"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/closurelab"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/tests", "/examples", "/docs", "/tools", "/README.md", "/README.zh-CN.md", "/LICENSE", "/NOTICE", "/pyproject.toml", "/.github", "/.gitignore", "/.gitattributes"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra --strict-markers"
+tmp_path_retention_policy = "all"
+tmp_path_retention_count = 100
+
+[tool.coverage.run]
+branch = true
+source = ["closurelab"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["closurelab"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src/closurelab"]

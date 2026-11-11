@@ -1,0 +1,16 @@
+Closure Lab is a new, AI-assisted engineering iteration of the author's earlier
+self-study programming exercises. It is not a claim that the original exercises
+already contained a text parser, CLI, explicit continuation machine or release tooling.
+
+The author confirmed that the supplied historical code was independently written.
+Some supplied comments still resemble teaching instructions ("please complete",
+"in class", and TODO skeletons); the original source files and compiled artifacts
+are deliberately not redistributed. If a third-party source is later identified,
+its contribution and license must be reviewed before adding it to this repository.
+
+The published implementation, tests and documentation were written for this project.
+Standard language concepts such as lexical scope, closures, S-expressions and the
+call-by-value Z combinator are described as concepts, not claimed as inventions.
+
+No .exe, .pdb, .class, IDE project metadata, original archive, personal document,
+access token or private historical path belongs in the published project.
