@@ -15,7 +15,7 @@ classifiers = ["Programming Language :: Python :: 3", "Topic :: Software Develop
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=8,<10", "coverage[toml]>=7.6,<8", "ruff>=0.11,<1", "mypy>=1.15,<2", "build>=1.2,<2"]
+dev = ["pytest>=8,<10", "coverage[toml]>=7.6,<8", "ruff==0.17.4", "mypy>=1.15,<2", "build>=1.2,<2"]
 
 [project.scripts]
 closurelab = "closurelab.cli:main"

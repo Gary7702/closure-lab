@@ -91,8 +91,7 @@ second = execute("(+ offset 3)", environment=first.environment)
 assert second.value == 10
 
 # Input from a trusted embedding host can use explicitly bounded work.
-execute("(+ base 2)", environment=standard_environment().extend({"base": 40}),
-        limits=Limits(max_steps=100))
+execute("(+ base 2)", environment=standard_environment().extend({"base": 40}), limits=Limits(max_steps=100))
 ```
 
 A custom environment does not automatically contain built-ins; for extensions use `standard_environment().extend(...)` from `closurelab.runtime`. The first API example uses the default built-in environment. A host-provided environment is a trusted interface, not a route for untrusted external objects.
